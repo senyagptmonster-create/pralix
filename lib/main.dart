@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'presentation/pralix_app.dart';
+import 'pralix_app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
