@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pralix/product/product_app.dart';
+import 'package:pralix/presentation/pralix_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('PralixApp launches successfully smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const PralixApp());
+    expect(find.byType(PralixApp), findsOneWidget);
   });
 }
