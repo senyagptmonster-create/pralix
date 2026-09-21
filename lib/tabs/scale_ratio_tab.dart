@@ -90,9 +90,16 @@ class _ScaleRatioTabState extends State<ScaleRatioTab> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text('Actual Real-World Length:', style: TextStyle(color: PralixTheme.textSecondary)),
-                    Text(
-                      '${realMeters.toStringAsFixed(2)} meters',
-                      style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900, color: PralixTheme.cyan),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          '${realMeters.toStringAsFixed(2)} meters',
+                          style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900, color: PralixTheme.cyan),
+                        ),
+                      ),
                     ),
                   ],
                 ),
